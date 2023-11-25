@@ -1,0 +1,53 @@
+{
+	"name": "mendown",
+	"description": "Next Generation Markdown Tooling.",
+	"version": "0.0.0",
+	"author": "JacobLinCool <jacoblincool@gmail.com> (https://jacoblin.cool)",
+	"license": "AGPL-3.0",
+	"keywords": [],
+	"type": "module",
+	"bin": {
+		"mendown": "./dist/index.js"
+	},
+	"main": "./dist/lib.js",
+	"types": "./dist/lib.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/lib.js",
+			"require": "./dist/lib.cjs",
+			"types": "./dist/lib.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup"
+	},
+	"dependencies": {
+		"@ai-d/aid": "^0.1.0",
+		"commander": "^11.1.0",
+		"debug": "^4.3.4",
+		"dotenv": "^16.3.1",
+		"openai": "^4.20.0",
+		"remark": "^15.0.1",
+		"remark-parse": "^11.0.0",
+		"unified": "^11.0.4",
+		"unist-util-visit": "^5.0.0",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"@types/debug": "^4.1.12",
+		"tsup": "^8.0.1",
+		"typedoc": "^0.25.3",
+		"typescript": "^5.3.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JacobLinCool/mendown.git"
+	},
+	"bugs": {
+		"url": "https://github.com/JacobLinCool/mendown/issues"
+	},
+	"homepage": "https://jacoblincool.github.io/mendown"
+}

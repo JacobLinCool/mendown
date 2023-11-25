@@ -1,0 +1,40 @@
+{
+	"private": true,
+	"name": "mendown-monorepo",
+	"author": "JacobLinCool <jacoblincool@gmail.com> (https://jacoblin.cool)",
+	"scripts": {
+		"prepare": "husky install",
+		"format": "prettier --write --ignore-path .gitignore **/*.{ts,json,yaml,yml}",
+		"test": "vitest",
+		"changeset": "changeset",
+		"build:docs": "typedoc --out docs"
+	},
+	"devDependencies": {
+		"@changesets/changelog-github": "^0.4.8",
+		"@changesets/cli": "^2.26.2",
+		"@types/node": "^20.10.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.1.0",
+		"prettier": "^3.1.0",
+		"prettier-plugin-organize-imports": "^3.2.4",
+		"serve": "^14.2.1",
+		"tsup": "^8.0.1",
+		"tsx": "^4.4.0",
+		"typedoc": "^0.25.3",
+		"typescript": "^5.3.2",
+		"vitest": "^0.34.6"
+	},
+	"lint-staged": {
+		"*.{ts,js,json,yaml,yml}": [
+			"prettier --write"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JacobLinCool/mendown.git"
+	},
+	"bugs": {
+		"url": "https://github.com/JacobLinCool/mendown/issues"
+	},
+	"homepage": "https://jacoblincool.github.io/mendown"
+}
